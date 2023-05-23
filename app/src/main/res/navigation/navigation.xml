@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bai2_training.ui.dessert.DessertFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_dessert" >
+        <action
+            android:id="@+id/action_homeFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.bai2_training.ui.food.FoodFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_drinkFragment"
+            app:destination="@id/drinkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkFragment"
+        android:name="com.example.bai2_training.ui.drink.DrinkFragment"
+        android:label="fragment_drink"
+        tools:layout="@layout/fragment_drink" >
+        <action
+            android:id="@+id/action_drinkFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.bai2_training.ui.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>

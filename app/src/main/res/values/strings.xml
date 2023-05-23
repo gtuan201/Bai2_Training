@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bai2_Training</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_order">Tiếp tục đặt món</string>
+    <string name="tvChooseDessert">Chọn món tráng miệng</string>
+    <string name="choose_food">Chọn món chính</string>
+    <string name="complete">Hoàn tất đặt món</string>
+    <string name="choose_drink">Chọn đồ uống</string>
+    <string name="back">Quay lại</string>
+</resources>

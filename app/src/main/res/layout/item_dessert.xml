@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgDessert"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_width="70dp"
+            app:riv_corner_radius="5dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/tvNameDessert"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgDessert"
+            android:layout_marginStart="10dp"
+            tools:text="Món tráng miệng"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            tools:text="Mô tả"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toEndOf="@id/imgDessert"
+            android:layout_below="@id/tvNameDessert"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvPrice"
+            tools:text="10.000vnđ"
+            android:textColor="#F44336"
+            android:layout_below="@id/tvDescription"
+            android:layout_toEndOf="@id/imgDessert"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
