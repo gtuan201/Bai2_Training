@@ -1,5 +1,6 @@
 package com.example.bai2_training.ui.dessert
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -39,6 +40,7 @@ class DessertAdapter(private var listDessert: ArrayList<Dish>? = null) : Recycle
             holder.binding.checkbox.setOnCheckedChangeListener{ _, isChecked ->
                 if (isChecked) {
                     listDessertChecked.add(dessert)
+                    Log.e("hihi","hihii")
                     dessert.isChecked = true
                 }
                 else {
